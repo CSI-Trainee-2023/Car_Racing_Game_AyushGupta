@@ -6,6 +6,7 @@
 body {
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
 #road {
@@ -40,8 +41,50 @@ body {
     width: 33px;
     height: 50px;
     z-index: 100;
+    top:-50vh;
 }
 
+@keyframes enemyCar1 {
+    0%{
+        top:-50vh;
+    }
+    100%{
+        top: 90vh;
+    }
+}
+@keyframes enemyCar2 {
+    0%{
+        top:-50vh;
+    }
+    100%{
+        top: 90vh;
+    }
+}
+@keyframes enemyCar3 {
+    0%{
+        top:-50vh;
+    }
+    100%{
+        top: 90vh;
+    }
+}
+@keyframes enemyCar4 {
+    0%{
+        top:-50vh;
+    }
+    100%{
+        top: 90vh;
+    }
+}
+@keyframes roadAnime {
+    0%{
+        top:-1200vh;
+    }
+    100%{
+        top:-50vh
+    }
+    
+}
 #enemyCar1 {
     left: -58px;
 }
@@ -59,7 +102,13 @@ body {
 }
 
 #myCar {
-    top: 30vh;
+    top: 38vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 33px;
+    height: 50px;
+    z-index: 100;
 }
 
 #score {
@@ -74,4 +123,7 @@ body {
     top: 10px;
     right: 10px;
     font-size: 30px;
+}
+.visibility{
+    display: none;
 }
